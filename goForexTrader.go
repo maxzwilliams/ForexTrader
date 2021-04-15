@@ -460,8 +460,8 @@ func simulateTick(candleSeries []candle, THDataPointer * [][][]candle, predictio
   minCloseAsk := float64(9999)
   if (currentAsk <= currentBid){
     fmt.Println(currentAsk, currentBid)
-    fmt.Println("fucking what")
-    time.Sleep(time.Second)
+    fmt.Println("current ask is less than current bid, something went wrong")
+    time.Sleep(time.Second*100)
   }
 
   //randomAction := rand.Int() % 5
